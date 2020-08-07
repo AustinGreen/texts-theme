@@ -1,0 +1,59 @@
+:root {
+  --font-family: "Fira Code", monospace, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --green: #3cdf2b;
+  --orange: #ec854a;
+
+  --color-bg: #080808;
+  --color-bg-rgb: 8, 8, 8;
+  --color-fg: white;
+  --color-fg-rgb: 255, 255, 255;
+  --color-primary: var(--color-bg);
+  --color-primary-rgb: var(--color-bg);
+
+  --message-bg: var(--color-bg);
+  --message-selected-bg: rgba(var(--color-fg-rgb), 0.2);
+  --message-sent-fg: var(--green);
+
+  --thread-selected-bg: var(--orange);
+
+  --right-pane-header-bg: var(--color-bg);
+  --messages-list-bg: var(--color-bg);
+
+  --command-bar-bg: rgba(0, 0, 0, 0.8);
+  --command-bar-fg: var(--color-fg);
+}
+
+.thread {
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.no-redact {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+.header-space {
+  background-color: var(--color-bg);
+}
+
+.tab-bar-container {
+  background-color: var(--color-bg);
+}
+
+.thread:not(.loading):hover {
+  background: #f1a980;
+}
+
+.bubble-mode .message-container .contents {
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.left {
+  border-right: 1px solid var(--compose-message-bg);
+}
